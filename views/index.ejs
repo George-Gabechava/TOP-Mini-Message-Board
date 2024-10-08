@@ -1,16 +1,24 @@
 <!-- index.ejs -->
 <html>
   <head>
-    <title>Homepage</title>
+    <title><%= title %></title>
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <%- include('navbar', {links: links}); %>
+    <h1>
+      <%= title %>
+    </h1>
+
+    <h2>Create a new message: <a href="new">Click Here!</a></h2>
 
     <ul>
-      <% users.forEach((user) => { %>
-        <%- include('user', {user: user}); %>
-      <% }); %>
+      <% for (let i = 0; i < messages.length; i++) { %>
+        <li>
+          <b><%= messages[i].user %>:</b> <%= messages[i].text %> 
+          <br>
+          <small><%= messages[i].added %></small>
+        </li>
+      <% } %>
     </ul>
     
     <%- include('footer'); %>
