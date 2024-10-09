@@ -39,8 +39,15 @@ app.get("/new", (req, res) => {
 });
 
 app.post("/new", (req, res) => {
-  let currentUser = req.body.currentUser;
-  let currentMessage = req.body.currentMessage;
+  const currentUser = req.body.currentUser;
+  const currentMessage = req.body.currentMessage;
   messages.push({ text: currentMessage, user: currentUser, added: new Date() });
   res.redirect("/");
+});
+
+// Message Details Page
+app.get("/details/:id", (req, res) => {
+  const messageIndex = req.params.id;
+  const message = messages[messageIndex];
+  res.render("details", { message });
 });

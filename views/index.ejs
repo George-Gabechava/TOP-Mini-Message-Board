@@ -17,6 +17,10 @@
           <b><%= messages[i].user %>:</b> <%= messages[i].text %> 
           <br>
           <small><%= messages[i].added %></small>
+          <br>
+          <button>
+            <a href="/details/<%= i %>">View Details</a>
+          </button> 
         </li>
       <% } %>
     </ul>
