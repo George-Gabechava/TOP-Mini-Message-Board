@@ -1,2 +1,23 @@
-body {
+li {
+  background-color: lightpink;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  list-style-type: none;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  border: solid grey 2px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 3px 4px lightgray;
+}
+
+button a{
+  color: black;
+  text-decoration: none;
+  font-size: large;
 }
