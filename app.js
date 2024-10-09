@@ -6,13 +6,13 @@ app.use(express.urlencoded({ extended: true }));
 // Example messages for the assignment
 const messages = [
   {
-    text: "Hi there!",
-    user: "Amando",
+    text: "Hello, please be nice on my website :)",
+    user: "George",
     added: new Date()
   },
   {
     text: "Hello World!",
-    user: "Charles",
+    user: "Test",
     added: new Date()
   }
 ];
