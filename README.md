@@ -1,5 +1,5 @@
 # TOP-Mini-Message-Board
 
-Create an online message board.
+https://mini-message-board-top-george.onrender.com/
 
-Requirements: https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board
+Online message board hosted by Render. The host server may need a few seconds to spin up the website after periods of inactivity.

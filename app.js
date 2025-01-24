@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 app.use(express.urlencoded({ extended: true }));
+const { body, validationResult } = require("express-validator");
 
 // Example messages for the assignment
 const messages = [
