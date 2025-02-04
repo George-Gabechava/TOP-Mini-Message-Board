@@ -1,5 +1,5 @@
 # TOP-Mini-Message-Board
 
-https://mini-message-board-top-george.onrender.com/
+https://top-mini-message-board-production-bf86.up.railway.app/
 
-Online message board hosted by Render. The host server may need a few seconds to spin up the website after periods of inactivity.
+Online message board hosted by Railway.
