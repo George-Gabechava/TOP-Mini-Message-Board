@@ -6,7 +6,6 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 const router = require("./routes/router");
 
-
 // dot env config
 const PORT = process.env._PORT || 5000;
 
