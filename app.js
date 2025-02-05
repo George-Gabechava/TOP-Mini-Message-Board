@@ -9,8 +9,6 @@ const router = require("./routes/router");
 
 // dot env config
 const PORT = process.env._PORT || 5000;
-const API_KEY = process.env.API_KEY
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
 // Set the view engine to EJS
 app.set("view engine", "ejs");
