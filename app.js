@@ -9,6 +9,11 @@ const router = require("./routes/router");
 // dot env config
 const PORT = process.env._PORT || 5000;
 
+// Listen on `PORT` and 0.0.0.0
+app.listen(PORT, "0.0.0.0", function () {
+  // ...
+});
+
 // Set the view engine to EJS
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views")); // Set the views directory
