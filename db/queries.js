@@ -6,9 +6,9 @@ async function getAllMessages() {
 }
 
 async function insertMessage(user, text) {
-  // const timestamp = new Date().toISOString();
-  const query = "INSERT INTO my_messages (name, text, added) VALUES ($1, $2, NOW())";
-  await pool.query(query, [user, text]);
+  const timestamp = new Date();
+  const query = "INSERT INTO my_messages (name, text, added) VALUES ($1, $2, $3)";
+  await pool.query(query, [user, text, timestamp]);
 }
 
 async function getMessageById(id) {
