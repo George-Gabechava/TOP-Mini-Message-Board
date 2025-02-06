@@ -1,5 +1,9 @@
 // app.js
 require('dotenv').config();
+
+// Debugging: Log environment variable
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
+
 const express = require("express");
 const path = require("path");
 const app = express();
