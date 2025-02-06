@@ -14,7 +14,7 @@ async function postNewMessage (req, res) {
 
 async function getDetails (req, res) {
   const messageIndex = req.params.id;
-  const message = messages[messageIndex];
+  const message = await db.getMessageById(messageIndex);
 
   if (!message) {
     return res.status(404).send("Message not found");
