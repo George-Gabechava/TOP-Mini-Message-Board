@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>Create Form</title>
-    <link rel="stylesheet" href="/styles.css"">
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <h1>Add a new message</h1>
-    <form method="POST" action="/new">
+    <form method="POST" action="/new" id="newMessage">
       <label for="currentUser">Name:</label>
       <input type="text" id="currentUser" name="currentUser" required>
       
@@ -15,6 +15,8 @@
       
       <button type="submit">Submit</button>
     </form>
+
+    <button><a href="/">Go back to the homepage</a></button>
     
   </body>
 </html>

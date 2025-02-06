@@ -3,34 +3,70 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: antiquewhite;
 }
 
-
+.ul {
+  padding-left: 0px;
+}
 
 li {
   background-color: lightpink;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   list-style-type: none;
-  padding-left: 2vw;
+  padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 1vh;
   padding-top: 1vh;
   border: solid grey 2px;
+  font-size: large;
 }
 
 li b {
-  font-size: larger;
+  font-size: large;
 }
 
 button {
-  margin-top: 10px;
-  padding: 5px;
   box-shadow: 3px 4px lightgray;
+  padding: 10px 20px;
+  font-size: x-large;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: auto; 
 }
 
-button a{
-  color: black;
+form button {
+  width: 100%; 
+}
+
+button a {
   text-decoration: none;
+  color: black;
+  font-size: inherit;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newMessage {
+  display: flex;
+  flex-direction: column;
+}
+
+#input, textarea, label, p{
   font-size: large;
 }
+
+textarea {
+  min-width: .3vw;
+  min-height: .2vh;
+}
+
