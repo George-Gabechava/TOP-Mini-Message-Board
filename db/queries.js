@@ -7,6 +7,7 @@ async function getAllMessages() {
 
 async function insertMessage(user, text) {
   const timestamp = new Date();
+  console.log("Inserting message with timestamp:", timestamp);
   const query = "INSERT INTO my_messages (name, text, added) VALUES ($1, $2, $3)";
   await pool.query(query, [user, text, timestamp]);
 }
