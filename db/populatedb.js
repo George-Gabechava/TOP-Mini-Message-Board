@@ -1,3 +1,4 @@
+// populatedb.js
 // Example messages for the assignment
 const messages = [
   {
