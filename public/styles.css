@@ -10,7 +10,7 @@ body {
   padding-left: 0px;
 }
 
-li {
+.card {
   background-color: lightpink;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -21,19 +21,15 @@ li {
   padding-top: 1vh;
   border: solid grey 2px;
   font-size: large;
+  display: flex;
+  flex-direction: column;
 }
 
-li b {
-  font-size: large;
-}
-
+/* General button styling - applies to ALL buttons */
 button {
   box-shadow: 3px 4px lightgray;
   padding: 10px 20px;
   font-size: x-large;
-  background-color: lightgray;
-  border: none;
-  cursor: pointer;
   text-align: center;
   display: flex; 
   align-items: center;
@@ -46,7 +42,6 @@ form button {
 }
 
 button a {
-  text-decoration: none;
   color: black;
   font-size: inherit;
   width: 100%;
@@ -55,6 +50,7 @@ button a {
   align-items: center;
   justify-content: center;
 }
+
 
 #newMessage {
   display: flex;
