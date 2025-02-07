@@ -11,8 +11,9 @@
 
     <button <h2><a href="new">Create A New Message</h2></a></button>
 
-    <div class="card">
+    <div>
       <% for (let i = 0; i < messages.length; i++) { %>
+        <li>
           <b><%= messages[i].name %>:</b> <%= messages[i].text %> 
           <br>
           <p><smaller><%= messages[i].added %></smaller></p>
@@ -20,6 +21,7 @@
           <button>
             <a href="/details/<%= messages[i].id %>">View Details</a>
           </button> 
+        </li>
       <% } %>
       </div>
     
