@@ -8,10 +8,10 @@
     <h1>Add a new message</h1>
     <form method="POST" action="/new" id="newMessage">
       <label for="currentUser">Name:</label>
-      <input type="text" id="currentUser" name="currentUser" required>
+      <input type="text" id="currentUser" name="currentUser" required maxlength="50">
       
       <label for="currentMessage">Message:</label>
-      <textarea id="currentMessage" name="currentMessage" required></textarea>
+      <textarea id="currentMessage" name="currentMessage" required maxlength="750"></textarea>
       
       <button type="submit">Submit</button>
     </form>
