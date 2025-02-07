@@ -29,13 +29,17 @@ li b {
 
 button {
   box-shadow: 3px 4px lightgray;
-  padding: 10px 20px;
   font-size: x-large;
   text-align: center;
   display: flex; 
   align-items: center;
   justify-content: center;
   width: auto; 
+}
+
+li button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form button {
